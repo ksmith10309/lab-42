@@ -4,7 +4,7 @@
 Today, we begin the construction of a Twitter-like application called "Yakker"
 
 ## Before you begin
-* Open this [Starter Sandbox](https://codesandbox.io/s/404x0ro2lw) and Fork it
+* Open this [Starter Sandbox](https://codesandbox.io/s/5zzpv6zlon) and Fork it
 * Create a new repository in your github account called `yakker-server`
 * Copy the starter code from this reppository into yours, run an `npm install` and start it up with `nodemon`
 
