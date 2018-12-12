@@ -1,42 +1,31 @@
-![CF](http://i.imgur.com/7v5ASc8.png) LAB
+![CF](http://i.imgur.com/7v5ASc8.png) LAB 42
 =================================================
 
-## Project Name
+## Socket.io
 
-### Author: Student/Group Name
+### Author: Katherine Smith
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+* [CodeSandBox](https://codesandbox.io/s/7mpo9x0yz0)
+* [yakker-server](https://github.com/ksmith10309/yakker-server)
 
 ### Modules
-#### `modulename.js`
-##### Exported Values and Methods
+#### `index.js`
+- Contains the Main component
+  - Imports and renders the App component
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+#### `app.js`
+- Contains the App component
+  - Imports and renders the Chatroom component
 
-###### `bar(array) -> array`
-Usage Notes or examples
-
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
-
-#### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
-
-#### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+#### `chatroom.js`
+- Imports io from socket.io-client and connects to a socket
+- Contains Chatroom component
+  - Contains state for typedInput and words
+  - Contains updateWords() method which updates state with incoming messages
+  - Contains handleSubmit() method which emits outgoing messages and updates state with outgoing messages
+  - Contains handleNewWords() method which updates state with typed input
+  - Renders the chatroom
 
 #### UML
-Link to an image of the UML for your application and response to events
+<img src="./socket-io.jpg" alt="socket-io.jpg" width="700px">
